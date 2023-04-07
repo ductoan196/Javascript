@@ -15,3 +15,17 @@ console.log(getElementGreater(arr2, 3));
 console.log(getElementGreater(arr2, 5));
 
 //Lab3: 
+function copyString(str){
+    let result = []
+    for(let i=0; i<10; i++) result.push(str)
+    return result.join('')
+}
+console.log(copyString('a'))
+
+//Lab4
+function copyString(str){
+    let result = []
+    for(let i=0; i<10; i++) result.push(str)
+    return result.join('-')
+}
+console.log(copyString('a'))
