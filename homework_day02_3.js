@@ -1,17 +1,6 @@
 //Lab1: 
-let arr1= [1,2,3,4,5]
-function checkElementExist(arr,num){
-    return arr.includes(num)
+function sum(arr) {
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) total += arr[i];
+  return total;
 }
-console.log(checkElementExist(arr1,5))
-console.log(checkElementExist(arr1,6))
-
-//Lab2: 
-let arr2 = [1, 2, 3, 4, 5];
-function getElementGreater(arr, num) {
-  return arr.filter(x => x > num);
-}
-console.log(getElementGreater(arr2, 3));
-console.log(getElementGreater(arr2, 5));
-
-//Lab3: 

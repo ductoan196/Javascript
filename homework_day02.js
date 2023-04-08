@@ -62,5 +62,18 @@ function remain_arr(arr) {
 }
 console.log(remain_arr(arr8));
 
-//Lab9
-function repeatString(charact)
+//Lab9: 
+function copyString(str){
+  let arr = []
+  for(let i=0; i<10; i++) arr.push(str)
+  return arr.join('')
+}
+
+//Lab10:
+console.log(copyString('a'))
+function copyString2(str){
+  let arr = []
+  for(let i=0; i<10; i++) arr.push(str)
+  return arr.join('-')
+}
+console.log(copyString2('a'))
