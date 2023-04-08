@@ -43,4 +43,13 @@ function find_big_prime_num(arr) {
   return Math.max(...arr.filter(x => is_prime(x)));
 }
 
-//
+//Lab5
+function replace(arr) {
+  for (let i = 0; i < arr.length; i++) if (arr[i] < 0) arr[i] = 0;
+  return arr;
+}
+
+//Lab6
+function delete_prime_num(arr) {
+  return arr.filter(x => !is_prime(x));
+}
