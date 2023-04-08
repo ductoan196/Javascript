@@ -15,17 +15,11 @@ console.log(getElementGreater(arr2, 3));
 console.log(getElementGreater(arr2, 5));
 
 //Lab3: 
-function copyString(str){
-    let result = []
-    for(let i=0; i<10; i++) result.push(str)
-    return result.join('')
+let arr3 = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F']
+function getHex(){
+    let color ='#'
+    for(let i=0; i<6;i++)
+    color += arr3[Math.floor(Math.random()*16)]
+    return color
 }
-console.log(copyString('a'))
-
-//Lab4
-function copyString(str){
-    let result = []
-    for(let i=0; i<10; i++) result.push(str)
-    return result.join('-')
-}
-console.log(copyString('a'))
+console.log(getHex())
