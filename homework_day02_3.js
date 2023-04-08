@@ -18,3 +18,29 @@ function average(arr){
 function bigger_key(arr, key){
   return arr.filter(x => x>key)
 }
+
+//Lab2
+function insert_element(arr, pos, key) {
+  arr.splice(pos, 0, key);
+  return arr;
+}
+
+//Lab3
+function is_square(num) {
+  return Math.sqrt(num) % 1 === 0;
+}
+function filter_square_number(arr) {
+  return arr.filter(x => is_square(x));
+}
+
+//Lab4
+function is_prime(num) {
+  if (num <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) if (num % i === 0) return false;
+  return true;
+}
+function find_big_prime_num(arr) {
+  return Math.max(...arr.filter(x => is_prime(x)));
+}
+
+//
