@@ -16,8 +16,21 @@ function Student(name, grade, sex){
 
   let students = [student1,student2,student3,student4,student5,student6,student7, student8, student9,student10]
 
+//1
 function avg_grade(student_list){
     let sum = student_list.reduce((sum, student) => sum+ student.grade,0)
     return sum/(student_list.length)
 }
 console.log(avg_grade(students))
+
+//2
+function avg_grade_gender(student_list,gender){
+    let male_list = student_list.filter(student => student.sex ===gender)
+    return avg_grade(male_list)
+}
+console.log(avg_grade_gender(students,"M"))
+
+//3
+console.log(avg_grade_gender(students,"F"))
+
+//4
