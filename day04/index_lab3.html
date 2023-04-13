@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen">
+
+    <div class="mt-16 ">
+        <ul id="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+        </ul>
+    </div>
+
+
+    <script>
+        //1.
+        let list = document.getElementById("list");
+
+        let item8 = document.createElement("li");
+        item8.textContent = "Item 8";
+
+        let item9 = document.createElement("li");
+        item9.textContent = "Item 9";
+
+        let item10 = document.createElement("li");
+        item10.textContent = "Item 10";
+
+        list.appendChild(item8);
+        list.appendChild(item9);
+        list.appendChild(item10);
+
+        //2.
+
+        let firstItem = list.querySelector("li:first-child");
+
+        // sửa nội dung và màu sắc của thẻ <li> đầu tiên
+        firstItem.textContent = "Item 1 (Red)";
+        firstItem.style.color = "red";
+
+    </script>
+</body>
+
+</html>
