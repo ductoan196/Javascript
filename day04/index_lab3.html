@@ -42,10 +42,16 @@
         //2.
 
         let firstItem = list.querySelector("li:first-child");
-
-        // sửa nội dung và màu sắc của thẻ <li> đầu tiên
         firstItem.textContent = "Item 1 (Red)";
         firstItem.style.color = "red";
+
+        //3.
+        let thirdListItem = document.querySelector('#list li:nth-child(3)');
+        thirdListItem.style.backgroundColor = "green";
+
+        //4.
+        let fourthListItem = document.querySelector('#list li:nth-child(4)');
+        fourthListItem.remove();
 
     </script>
 </body>
