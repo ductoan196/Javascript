@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi est sunt quas impedit nobis harum sit laborum,
+        assumenda distinctio enim. Omnis explicabo repudiandae sit eum doloremque, laboriosam voluptate rerum
+        laudantium?</p>
+    <button>Click me</button>
+
+    <script>
+        function sayHello() {
+            console.log('Xin chào các bạn')
+        }
+        let btn = document.querySelector('button');
+        // btn.onclick = function () {
+        //     console.log('Xin chào các bạn 1')
+        // }
+        btn.addEventListener('click', function () {
+            console.log('Xin chào các bạn 2')
+        })
+    </script>
+</body>
+
+</html>
