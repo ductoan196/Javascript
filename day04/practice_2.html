@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">Thêm phần tử DOM</h1>
+    <div class="content">
+        <p>Para 1</p>
+        <p>Para 2</p>
+    </div>
+
+    <div class="box">
+        <p>Box item</p>
+    </div>
+
+    <script>
+        const dom1 = document.createElement('p')
+        dom1.innerText = 'Hôm nay là thứ 3'
+
+        document.body.prepend(dom1)
+
+        const dom2 = document.createElement('p2')
+        dom2.innerText = 'Ngày mai là thứ 4'
+        document.body.appendChild(dom2)
+
+        // const box = document.querySelector('.box')
+        const box = document.getElementsByClassName('box')[0]
+        const dom3 = document.createElement('h3')
+        dom3.innerText = 'Sắp cuối tuần rồi'
+        document.body.insertBefore(dom3, box)
+
+    </script>
+</body>
+
+</html>

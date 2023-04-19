@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">Xin chào các bạn</h1>
+    <div class="content">
+        <p class="para">Para 1</p>
+        <p class="para">Para 2</p>
+        <p>Para 3</p>
+        <p>Para 4</p>
+    </div>
+
+    <script>
+        let h1 = document.getElementById('heading')
+        console.log(h1)
+
+        let paras = document.getElementsByClassName('para')
+        console.log(paras[1])
+
+        let paras1 = document.getElementsByTagName('p')
+        console.log(paras1[3])
+
+        let h1Selector = document.querySelector('#heading')
+        console.log(h1Selector)
+
+        let para = document.querySelector('.para')
+        console.log(para)
+
+        let p1 = document.querySelector('p')
+        console.log(p1)
+
+        let p3 = document.querySelector('.content p:last-child')
+        console.log(p3)
+
+        let p4 = document.querySelectorAll('.para')
+        console.log(p4)
+    </script>
+</body>
+
+</html>
